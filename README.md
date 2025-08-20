@@ -23,9 +23,9 @@ Installation & Requirements
 
 - Clone the repository and install the required dependencies:
 
-git clone https://github.com/yourusername/Valorant-Win-Rate-Prediction.git
-
+git clone https://github.com/Dr-Zero69/Valorant-Win-Rate-Prediction.git
 cd Valorant-Win-Rate-Prediction
+
 - Required libraries:
 - numpy  
 - pandas  

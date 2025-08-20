@@ -1,5 +1,6 @@
 Valorant Win Rate Prediction
-📌 Overview
+
+Overview
 
 This project predicts match outcome (win vs. loss) in Valorant using player performance features (KD, kills, deaths, assists) plus categorical context (agent, map). The original continuous win rate was converted to a binary target using a 0.5 threshold:
 
@@ -9,7 +10,7 @@ win = 0 otherwise
 
 The workflow covers EDA → preprocessing → baseline Logistic Regression → hyperparameter tuning → evaluation.
 
-🔑 Features
+Features
 
 EDA: frequency plots (agents, maps), histograms, correlation matrix
 
@@ -19,12 +20,12 @@ Models: Base Logistic Regression vs. tuned Logistic Regression
 
 Evaluation: accuracy (train/test), side-by-side bar chart comparison
 
-📂 Structure
+Structure
 Valorant-Win-Rate-Prediction/
 ├── README.md
 └── Valorant_data_prediction_hyper_parameter.ipynb
 
-⚙️ Installation & Run
+Installation & Run
 
 Clone the repo and install the libraries listed below (no requirements.txt needed):
 
@@ -46,7 +47,7 @@ Launch the notebook:
 
 jupyter notebook Valorant_data_prediction_hyper_parameter.ipynb
 
-📦 Dependencies
+Dependencies
 
 Python 3.x
 
@@ -58,15 +59,15 @@ scikit-learn
 
 jupyter
 
-(If you later prefer a requirements.txt, you can add one with the same list.)
 
-🧪 Data & Target
+Data & Target
 
 Target: binary win label derived from win_rate using 0.5 threshold
 
 Predictors: KD, Kills, Deaths, Assists, Agent Name, map_name (and any others present)
 
 Notes: KD is related to Kills/Deaths; keep an eye on multicollinearity for linear models. Trees are less sensitive.
+
 
 Results
 
